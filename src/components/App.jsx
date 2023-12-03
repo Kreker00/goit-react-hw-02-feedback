@@ -39,7 +39,7 @@ export class App extends Component {
     return (
       <>
         <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
+          options={Object.keys(this.state)}
           onLeaveFeedback={this.onLeaveFeedback}
         />
         {total === 0 ? (
